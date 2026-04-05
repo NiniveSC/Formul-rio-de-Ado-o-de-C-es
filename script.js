@@ -85,8 +85,49 @@ form.addEventListener("submit", function (event) {
 
 
 
+    if (moradia === "apartamento" && quintal === "sim") {
+        alert("Apartamento não possui quintal.");
+        return;
+    }
+
+    if (moradia === "casa" && quintal === "nao") {
+        alert("Casa sem quintal pode não ser ideal.");
+    }
+
+    if (horas > 8) {
+        alert("O animal ficará muito tempo sozinho, justifique melhor.");
+        return;
+    }
+
+    if (pet === "nao") {
+        alert("A ONG poderá acompanhar sua adaptação com o pet.");
+    }
+
+    const motivosGenericos = ["quero", "porque sim"];
+    if (motivosGenericos.includes(motivo.toLowerCase())) {
+        alert("Motivo da adoção muito genérico.");
+        return;
+    }
+
+    if (motivo.toLowerCase().includes("hoje")) {
+        alert("Decisão impulsiva detectada.");
+    }
+
+    if (motivo.toLowerCase().includes("não tenho dinheiro")) {
+        alert("Adoção não recomendada sem condições financeiras.");
+        return;
+    }
 
 
-    
+    alert(`
+        Cadastro realizado com sucesso!
+
+        Nome: ${nome}
+        Email: ${email}
+        Cidade: ${cidade}
+        `);
+
+    form.requestFullscreen();
+
 
 });
