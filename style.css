@@ -53,3 +53,32 @@ form {
     padding: 10px;
     height: 80px;
 }
+
+.lados {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    
+    z-index: 1;
+}
+
+.colunaEsquerda,
+.colunaDireita {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.colunaEsquerda img,
+.colunaDireita img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
