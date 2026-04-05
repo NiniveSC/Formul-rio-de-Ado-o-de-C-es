@@ -5,18 +5,18 @@ const cpfsCadastrados = ["12345678900", "11122233344"];
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("email").value;
-    const telefone = document.getElementById("telefone").value;
-    const cpf = document.getElementById("cpf").value;
-    const idade = parseInt(document.getElementById("idade").value);
-    const cidade = document.getElementById("cidade").value;
-    const quintal = document.getElementById("quintal").value;
-    const moradia = document.getElementById("moradia").value;
-    const pet = document.getElementById("pet").value;
-    const horas = parseInt(document.getElementById("horas").value);
-    const motivo = document.getElementById("motivo").value.trim();
-    const termo = document.getElementById("termo").checked;
+    let nome = document.getElementById("nome").value.trim();
+    let email = document.getElementById("email").value;
+    let telefone = document.getElementById("telefone").value;
+    let cpf = document.getElementById("cpf").value;
+    let idade = parseInt(document.getElementById("idade").value);
+    let cidade = document.getElementById("cidade").value;
+    let quintal = document.getElementById("quintal").value;
+    let moradia = document.getElementById("moradia").value;
+    let pet = document.getElementById("pet").value;
+    let horas = parseInt(document.getElementById("horas").value);
+    let motivo = document.getElementById("motivo").value.trim();
+    let termo = document.getElementById("termo").checked;
 
     if (nome.length < 3) {
         alert("O Nome deve ter no mínimo 3 caracteres.");
