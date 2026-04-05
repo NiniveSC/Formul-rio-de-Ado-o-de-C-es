@@ -8,6 +8,10 @@ body {
     justify-content: center;
 }
 
+header{
+
+}
+
 h2 {
     background-color: aliceblue;
     padding: 15px;
@@ -26,7 +30,7 @@ main {
 
     background-color: aliceblue;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     align-items: center;
     border-radius: 20px;
     align-content: center;
@@ -36,4 +40,15 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#horas {
+    width: 310px;
+    padding: 10px;
+}
+
+#motivo {
+    width: 100%;
+    padding: 10px;
+    height: 80px;
 }
