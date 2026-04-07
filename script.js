@@ -127,7 +127,7 @@ form.addEventListener("submit", function (event) {
         Cidade: ${cidade}
         `);
 
-    form.requestFullscreen();
+    form.reset();
 
 
 });
